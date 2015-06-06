@@ -1,0 +1,8 @@
+NAME=librtmp
+VERSION=2.3
+URL=http://localhost:8000/librtmp-2.3.tar.gz
+LICENSE=GPLv2
+SHA1=98467c10f20092980541600b2f1fb995c0eaf425
+DEPENDS=(glibc-compat nacl-spawn openssl)
+DISABLED_LIBC=(bionic)
+DISABLED_TOOLCHAIN=(emscripten)

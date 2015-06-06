@@ -1,0 +1,16 @@
+--- a/rtmp.c	2015-05-04 16:43:00.000000000 -0700
++++ b/rtmp.c	2015-05-04 22:16:41.000000000 -0700
+@@ -28,10 +28,13 @@
+ #include <string.h>
+ #include <assert.h>
+ #include <time.h>
++#include <unistd.h>
+ 
+ #include "rtmp_sys.h"
+ #include "log.h"
+ 
++#define _SC_CLK_TCK 3
++
+ #ifdef CRYPTO
+ #ifdef USE_POLARSSL
+ #include <polarssl/havege.h>
